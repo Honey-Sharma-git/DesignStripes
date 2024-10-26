@@ -1,0 +1,41 @@
+html {
+  background-color: beige;
+}
+input,
+select,
+button,
+textarea {
+  background-color: inherit;
+}
+
+h1 {
+  font-size: xxx-large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+h2,
+h3,
+h4 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+p {
+  text-align: justify;
+}
+div {
+  font-size: x-large;
+  text-align: center;
+}
+table,
+tr,
+th,
+td,
+caption {
+  border: 1.5px solid #000000;
+  font-family: "Courier New", Courier, monospace;
+  border-collapse: collapse;
+  padding: 0.5rem;
+}
+.nav-links-list {
+  line-height: 1.8;
+}
