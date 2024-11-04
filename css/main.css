@@ -21,21 +21,22 @@ button {
 /* VARIABLES */
 :root {
   /* COLORS */
-  --BG-COLOR: #000000;
-  --SECTION-BG-COLOR: #14213d;
+  --ANCHOR-TEXT-COLOR:#e5e5e5;
   --ASIDE-BG-COLOR: #e5e5e5;
-  --TITLE-COLOR: #fca311;
-  --LINK-COLOR: royalblue;
-  --TEXT-COLOR: #ffffff;
+  --BG-COLOR: #000000;
   --BUTTON-BG-COLOR: #fca311;
-  --BUTTON-TEXT-COLOR: #000000;
   --BUTTON-SHADOW-COLOR: rgb(194, 194, 194);
+  --BUTTON-TEXT-COLOR: #000000;
+  --LINK-COLOR: blue;
+  --SECTION-BG-COLOR: #14213d;
+  --TEXT-COLOR: #ffffff;
+  --TITLE-COLOR: #fca311;
 
   /* STYLES */
-  --FF: "Roboto", sans-serif;
-  --BUTTON-PADDING: 0.5rem;
   --BUTTON-BORDER: 1px solid var(var(--BUTTON-BG-COLOR));
+  --BUTTON-PADDING: 0.5rem;
   --BUTTON-SHADOW: 0 0 10px 1px var(--BUTTON-SHADOW-COLOR);
+  --FF: "Roboto", sans-serif;
 }
 
 /* || UTILITY CLASSES */
@@ -53,9 +54,36 @@ button {
   color: var(--TEXT-COLOR);
   transition: box-shadow 0.3s, color 0.3s;
 }
+.link {
+  text-decoration: none;
+  color: var(--LINK-COLOR);
+  font-size: 1.1rem;
+}
+.link:hover {
+  filter: brightness(70%);
+  text-decoration: underline;
+}
+
+.toc__anchor{
+  text-decoration: none;
+  color:var(--ANCHOR-TEXT-COLOR);
+  font-size: 1.3rem;
+}
+.toc__anchor:hover{
+  
+  text-decoration: underline;
+}
 /* || GENERAL STYLES */
 .container {
   display: grid;
   place-content: center;
   margin: 2rem;
+}
+.toc__list{
+  padding-left: 1rem;
+  margin: 1rem;
+  line-height: 25px;
+}
+.toc{
+  background-color: var(--SECTION-BG-COLOR);
 }
