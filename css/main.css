@@ -1,62 +1,89 @@
+@import url("https://fonts.google.com/css2?family=Roboto&display=swap");
 /* || CSS RESET */
 *,
 *::after,
 *::before {
+  box-sizing: border-box;
   /* outline: 1px solid lime; */
+  /* background-color: hsla(0, 100%, 50%, 0.1); */
 }
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
-  /* background-color: hsla(0, 100%, 50%, 0.1); */
 }
 img {
   display: block;
 }
+button {
+  font: inherit;
+}
+
+/* VARIABLES */
+:root {
+  /* COLORS */
+  --ANCHOR-TEXT-COLOR:#e5e5e5;
+  --ASIDE-BG-COLOR: #e5e5e5;
+  --BG-COLOR: #000000;
+  --BUTTON-BG-COLOR: #fca311;
+  --BUTTON-SHADOW-COLOR: rgb(194, 194, 194);
+  --BUTTON-TEXT-COLOR: #000000;
+  --LINK-COLOR: blue;
+  --SECTION-BG-COLOR: #14213d;
+  --TEXT-COLOR: #ffffff;
+  --TITLE-COLOR: #fca311;
+
+  /* STYLES */
+  --BUTTON-BORDER: 1px solid var(var(--BUTTON-BG-COLOR));
+  --BUTTON-PADDING: 0.5rem;
+  --BUTTON-SHADOW: 0 0 10px 1px var(--BUTTON-SHADOW-COLOR);
+  --FF: "Roboto", sans-serif;
+}
+
+/* || UTILITY CLASSES */
+.btn {
+  background-color: var(--BUTTON-BG-COLOR);
+  border-radius: 100px;
+  border: var(--BUTTON-BORDER);
+  color: var(--BUTTON-TEXT-COLOR);
+  cursor: pointer;
+  outline: transparent;
+  padding: var(--BUTTON-PADDING);
+}
+.btn:hover {
+  box-shadow: var(--BUTTON-SHADOW);
+  color: var(--TEXT-COLOR);
+  transition: box-shadow 0.3s, color 0.3s;
+}
+.link {
+  text-decoration: none;
+  color: var(--LINK-COLOR);
+  font-size: 1.1rem;
+}
+.link:hover {
+  filter: brightness(70%);
+  text-decoration: underline;
+}
+
+.toc__anchor{
+  text-decoration: none;
+  color:var(--ANCHOR-TEXT-COLOR);
+  font-size: 1.3rem;
+}
+.toc__anchor:hover{
+  
+  text-decoration: underline;
+}
 /* || GENERAL STYLES */
-html {
-  background-color: beige;
+.container {
+  display: grid;
+  place-content: center;
+  margin: 2rem;
 }
-input,
-select,
-button,
-textarea {
-  background-color: inherit;
+.toc__list{
+  padding-left: 1rem;
+  margin: 1rem;
+  line-height: 25px;
 }
-
-h1 {
-  font-size: xxx-large;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-h2,
-h3,
-h4 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-p {
-  text-align: justify;
-}
-div {
-  font-size: x-large;
-  text-align: center;
-}
-table,
-tr,
-th,
-td,
-caption {
-  border: 1.5px solid #000000;
-  font-family: "Courier New", Courier, monospace;
-  border-collapse: collapse;
-  padding: 0.5rem;
-}
-.nav-links-list {
-  line-height: 1.8;
-}
-
-/* REMOVING THIS LINK BECAUSE PAGE HASN'T DEVELOPED */
-.headerlinks a:nth-child(3) {
-  display: none;
+.toc{
+  background-color: var(--SECTION-BG-COLOR);
 }
