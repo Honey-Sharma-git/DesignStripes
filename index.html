@@ -22,17 +22,51 @@
     <title>DesignStripes</title>
   </head>
   <body>
-    <header>
-      <h1>DesignStripes &copy; | Graphic Designer</h1>
-      <p><strong>DesignStripes:</strong> <em>A Synonym for Creativity</em></p>
-      <p>
+    <header class="header">
+      <div class="header__topBar">
+        <h1 class="header__title">
+          <span class="nowrap">DesignStripes &copy;</span> | Graphic Designer
+        </h1>
+        <p class="header__slogan">
+          <strong>DesignStripes:</strong>
+          <em><span class="nowrap">A Synonym for Creativity</span></em>
+        </p>
+        <nav class="btnContainer">
+          <button
+            class="btn btn--stretch"
+            onclick="window.location.href='services.html';"
+          >
+            Services
+          </button>
+          <button
+            class="btn btn--stretch"
+            onclick="window.location.href='about.html' "
+          >
+            About
+          </button>
+          <button
+            class="btn btn--stretch"
+            onclick="window.location.href='contact.html' "
+          >
+            Contact
+          </button>
+
+          <button
+            class="btn btn--stretch"
+            onclick="window.location.href='faq.html' "
+          >
+            FAQ
+          </button>
+        </nav>
+      </div>
+      <p class="header__description">
         DesignStripes is your go-to online company for graphical branding
         solutions. We specialize in creating logos, signage, graphic designs,
         and other creative illustrations at affordable prices. Our expert team
         resolves design problems and helps bring your imagination to life.
         Explore our portfolio and services on our website today!
       </p>
-      
+
       <!-- TABLE OF CONTENT -->
       <nav class="toc">
         <h2 class="toc__title">Table of contents:</h2>

@@ -33,13 +33,16 @@ button {
   --TITLE-COLOR: #fca311;
 
   /* STYLES */
-  --BUTTON-BORDER: 1px solid var(var(--BUTTON-BG-COLOR));
+  --BUTTON-BORDER: 3px solid var(--BUTTON-BG-COLOR);
   --BUTTON-PADDING: 0.5rem;
   --BUTTON-SHADOW: 0 0 10px 1px var(--BUTTON-SHADOW-COLOR);
   --FF: "Roboto", sans-serif;
 }
 
 /* || UTILITY CLASSES */
+.nowrap{
+  white-space: nowrap;
+}
 .btn {
   background-color: var(--BUTTON-BG-COLOR);
   border-radius: 100px;
@@ -50,14 +53,15 @@ button {
   padding: var(--BUTTON-PADDING);
 }
 .btn:hover {
-  box-shadow: var(--BUTTON-SHADOW);
+  background-color: transparent;
+  border: var(--BUTTON-BORDER);
   color: var(--TEXT-COLOR);
-  transition: box-shadow 0.3s, color 0.3s;
+  transition: all 0.3s;
 }
 .link {
-  text-decoration: none;
   color: var(--LINK-COLOR);
   font-size: 1.1rem;
+  text-decoration: none;
 }
 .link:hover {
   filter: brightness(70%);
@@ -65,9 +69,9 @@ button {
 }
 
 .toc__anchor {
-  text-decoration: none;
   color: var(--ANCHOR-TEXT-COLOR);
   font-size: 1.3rem;
+  text-decoration: none;
 }
 .toc__anchor:hover {
   text-decoration: underline;
@@ -75,16 +79,45 @@ button {
 /* || GENERAL STYLES */
 body {
   background-color: var(--BG-COLOR);
-  font-family: var(--FF);
   color: var(--TEXT-COLOR);
+  font-family: var(--FF);
   font-size: 1rem;
 }
 .toc__list {
-  padding-left: 1rem;
-  margin: 1rem;
   line-height: 25px;
+  margin: 1rem;
+  padding-left: 1rem;
 }
 .toc {
   background-color: var(--SECTION-BG-COLOR);
   padding: 1rem;
+}
+.btnContainer {
+  column-gap: 10px;
+  display: grid;
+  grid-area: 1/2/3/3;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center stretch;
+}
+.btn--stretch {
+  justify-self: stretch;
+  width: 100%;
+}
+.header {
+  padding-top: 120px;
+}
+.header__topBar {
+  background-color: var(--BG-COLOR);
+  border-bottom: 3px solid white;
+  border-bottom: var(--BUTTON-BORDER);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  padding: 0rem 1rem 0.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.header_slogan {
+  grid-area: 2/1/3/2;
 }
