@@ -1,62 +1,61 @@
+@import url("https://fonts.google.com/css2?family=Roboto&display=swap");
 /* || CSS RESET */
 *,
 *::after,
 *::before {
+  box-sizing: border-box;
   /* outline: 1px solid lime; */
+  /* background-color: hsla(0, 100%, 50%, 0.1); */
 }
 * {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
-  /* background-color: hsla(0, 100%, 50%, 0.1); */
 }
 img {
   display: block;
 }
+button {
+  font: inherit;
+}
+
+/* VARIABLES */
+:root {
+  /* COLORS */
+  --BG-COLOR: #000000;
+  --SECTION-BG-COLOR: #14213d;
+  --ASIDE-BG-COLOR: #e5e5e5;
+  --TITLE-COLOR: #fca311;
+  --LINK-COLOR: royalblue;
+  --TEXT-COLOR: #ffffff;
+  --BUTTON-BG-COLOR: #fca311;
+  --BUTTON-TEXT-COLOR: #000000;
+  --BUTTON-SHADOW-COLOR: rgb(194, 194, 194);
+
+  /* STYLES */
+  --FF: "Roboto", sans-serif;
+  --BUTTON-PADDING: 0.5rem;
+  --BUTTON-BORDER: 1px solid var(var(--BUTTON-BG-COLOR));
+  --BUTTON-SHADOW: 0 0 10px 1px var(--BUTTON-SHADOW-COLOR);
+}
+
+/* || UTILITY CLASSES */
+.btn {
+  background-color: var(--BUTTON-BG-COLOR);
+  border-radius: 100px;
+  border: var(--BUTTON-BORDER);
+  color: var(--BUTTON-TEXT-COLOR);
+  cursor: pointer;
+  outline: transparent;
+  padding: var(--BUTTON-PADDING);
+}
+.btn:hover {
+  box-shadow: var(--BUTTON-SHADOW);
+  color: var(--TEXT-COLOR);
+  transition: box-shadow 0.3s, color 0.3s;
+}
 /* || GENERAL STYLES */
-html {
-  background-color: beige;
-}
-input,
-select,
-button,
-textarea {
-  background-color: inherit;
-}
-
-h1 {
-  font-size: xxx-large;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-h2,
-h3,
-h4 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-p {
-  text-align: justify;
-}
-div {
-  font-size: x-large;
-  text-align: center;
-}
-table,
-tr,
-th,
-td,
-caption {
-  border: 1.5px solid #000000;
-  font-family: "Courier New", Courier, monospace;
-  border-collapse: collapse;
-  padding: 0.5rem;
-}
-.nav-links-list {
-  line-height: 1.8;
-}
-
-/* REMOVING THIS LINK BECAUSE PAGE HASN'T DEVELOPED */
-.headerlinks a:nth-child(3) {
-  display: none;
+.container {
+  display: grid;
+  place-content: center;
+  margin: 2rem;
 }
