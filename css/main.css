@@ -21,7 +21,7 @@ button {
 /* VARIABLES */
 :root {
   /* COLORS */
-  --ANCHOR-TEXT-COLOR:#e5e5e5;
+  --ANCHOR-TEXT-COLOR: #e5e5e5;
   --ASIDE-BG-COLOR: #e5e5e5;
   --BG-COLOR: #000000;
   --BUTTON-BG-COLOR: #fca311;
@@ -64,26 +64,27 @@ button {
   text-decoration: underline;
 }
 
-.toc__anchor{
+.toc__anchor {
   text-decoration: none;
-  color:var(--ANCHOR-TEXT-COLOR);
+  color: var(--ANCHOR-TEXT-COLOR);
   font-size: 1.3rem;
 }
-.toc__anchor:hover{
-  
+.toc__anchor:hover {
   text-decoration: underline;
 }
 /* || GENERAL STYLES */
-.container {
-  display: grid;
-  place-content: center;
-  margin: 2rem;
+body {
+  background-color: var(--BG-COLOR);
+  font-family: var(--FF);
+  color: var(--TEXT-COLOR);
+  font-size: 1rem;
 }
-.toc__list{
+.toc__list {
   padding-left: 1rem;
   margin: 1rem;
   line-height: 25px;
 }
-.toc{
+.toc {
   background-color: var(--SECTION-BG-COLOR);
+  padding: 1rem;
 }
