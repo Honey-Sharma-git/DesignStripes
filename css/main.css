@@ -85,7 +85,7 @@ body {
   font-size: 1rem;
 }
 
-/* HEADER SECTION */
+/* HEADER SECTION STYLES*/
 .header {
   padding-top: 12rem;
 }
@@ -100,6 +100,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 .header_slogan {
   grid-area: 2/1/3/2;
@@ -110,22 +111,27 @@ body {
   grid-area: 1/2/3/3;
   grid-template-columns: repeat(4, 1fr);
   place-items: center stretch;
+  position: relative;
+}
+.btnContainer__title {
+  left: -1000000px;
+  position: absolute;
 }
 .btn--stretch {
   justify-self: stretch;
   width: 100%;
 }
 .header__description {
-  margin: 1rem 2rem;
   font-size: 2rem;
+  margin: 1rem 2rem;
   text-align: justify;
   text-indent: 100px;
 }
-/* TABLE OF CONTENTS */
+/* TABLE OF CONTENTS STYLES*/
 .toc__list {
   line-height: 30px;
-  margin: 2rem;
   list-style-position: inside;
+  margin: 2rem;
 }
 .toc__list li::marker {
   font-size: 1.3rem;
@@ -135,15 +141,15 @@ body {
   padding: 1rem 2rem;
 }
 
-/* HOMEPAGE ARTICLE */
+/* HOMEPAGE ARTICLE STYLES */
 .homepageArticle {
   margin: 1rem;
   padding: 1rem;
-  position:relative;
+  position: relative;
 }
-.homepageArticle__title{
-  position:absolute;
+.homepageArticle__title {
   left: -1000000px;
+  position: absolute;
 }
 .section {
   background-color: var(--SECTION-BG-COLOR);
@@ -157,42 +163,43 @@ body {
 }
 .section__para {
   font-size: 1.2rem;
-  text-align: justify;
-  padding: 0.5rem 1rem 0.5rem;
-  line-height: 30px;
   letter-spacing: 1.5px;
+  line-height: 30px;
+  padding: 0.5rem 1rem 0.5rem;
+  text-align: justify;
 }
 .section__figure {
-  padding: 1rem;
-  width: fit-content;
   float: left;
   margin-right: 1.5rem;
+  padding: 1rem;
+  width: fit-content;
 }
 .section__img {
   height: 250px;
   width: 250px;
 }
-.section__list{
-  padding-left: 2rem;
-  line-height: 30px;
+.section__list {
   font-size: 1.2rem;
-  text-align: justify;
-  padding: 0.5rem 1rem 0.5rem;
+  line-height: 30px;
   list-style-position: inside;
+  padding-left: 2rem;
+  padding: 0.5rem 1rem 0.5rem;
+  text-align: justify;
 }
-.section__list li{
+.section__list li {
   margin: 1rem 0rem;
 }
-.subSection__title{
+.subSection__title {
   font-size: 1.3rem;
   margin-bottom: 1rem;
   padding: 0rem 1rem;
 }
-.section__list--lineHeight{
-  /* padding-left: 2rem; */
-  line-height: 30px;
+.section__list--lineHeight {
   font-size: 1.2rem;
-  text-align: justify;
-  padding: 0.5rem 1rem 0.5rem;
+  line-height: 30px;
   list-style-position: inside;
+  padding: 0.5rem 1rem 0.5rem;
+  text-align: justify;
 }
+
+/* FOOTER SECTION STYLES */
