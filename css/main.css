@@ -136,3 +136,30 @@ body {
   margin: 1rem;
   padding: 1rem;
 }
+.section {
+  background-color: var(--SECTION-BG-COLOR);
+  margin: 1rem 0;
+  padding: 1rem;
+}
+.section__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  padding: 0rem 1rem;
+}
+.section__para {
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 0.5rem 1rem 0.5rem;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+}
+.section__figure {
+  padding: 1rem;
+  width: fit-content;
+  float:left;
+  margin-right: 1.5rem;
+}
+.section__img{
+  height: 250px;
+  width: 250px;
+}
