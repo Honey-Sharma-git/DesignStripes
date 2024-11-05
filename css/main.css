@@ -1,4 +1,4 @@
-@import url("https://fonts.google.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* || CSS RESET */
 *,
 *::after,
@@ -40,6 +40,15 @@ button {
 }
 
 /* || UTILITY CLASSES */
+.text-large{
+  font-size: 1.3rem;
+}
+.line-30{
+  line-height: 30px;
+}
+.text-justify{
+  text-align: justify;
+}
 .nowrap {
   white-space: nowrap;
 }
@@ -70,7 +79,7 @@ button {
 
 .toc__anchor {
   color: var(--ANCHOR-TEXT-COLOR);
-  font-size: 1.3rem;
+  /* font-size: 1.3rem; */
   text-decoration: none;
 }
 .toc__anchor:hover {
@@ -91,7 +100,6 @@ body {
 }
 .header__topBar {
   background-color: var(--BG-COLOR);
-  border-bottom: 3px solid white;
   border-bottom: var(--BUTTON-BORDER);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -165,7 +173,7 @@ body {
   font-size: 1.2rem;
   letter-spacing: 1.5px;
   line-height: 30px;
-  padding: 0.5rem 1rem 0.5rem;
+  padding: 0.5rem 1rem;
   text-align: justify;
 }
 .section__figure {
@@ -182,7 +190,6 @@ body {
   font-size: 1.2rem;
   line-height: 30px;
   list-style-position: inside;
-  padding-left: 2rem;
   padding: 0.5rem 1rem 0.5rem;
   text-align: justify;
 }
