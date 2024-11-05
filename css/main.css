@@ -125,6 +125,10 @@ body {
 .toc__list {
   line-height: 30px;
   margin: 2rem;
+  list-style-position: inside;
+}
+.toc__list li::marker {
+  font-size: 1.3rem;
 }
 .toc {
   background-color: var(--SECTION-BG-COLOR);
@@ -156,10 +160,21 @@ body {
 .section__figure {
   padding: 1rem;
   width: fit-content;
-  float:left;
+  float: left;
   margin-right: 1.5rem;
 }
-.section__img{
+.section__img {
   height: 250px;
   width: 250px;
+}
+.section__list{
+  padding-left: 2rem;
+  line-height: 30px;
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 0.5rem 1rem 0.5rem;
+  list-style-position: inside;
+}
+.section__list li{
+  margin: 1rem 0rem;
 }
