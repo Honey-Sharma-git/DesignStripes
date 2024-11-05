@@ -139,6 +139,11 @@ body {
 .homepageArticle {
   margin: 1rem;
   padding: 1rem;
+  position:relative;
+}
+.homepageArticle__title{
+  position:absolute;
+  left: -1000000px;
 }
 .section {
   background-color: var(--SECTION-BG-COLOR);
@@ -177,4 +182,17 @@ body {
 }
 .section__list li{
   margin: 1rem 0rem;
+}
+.subSection__title{
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  padding: 0rem 1rem;
+}
+.section__list--lineHeight{
+  /* padding-left: 2rem; */
+  line-height: 30px;
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 0.5rem 1rem 0.5rem;
+  list-style-position: inside;
 }
