@@ -41,28 +41,28 @@ button {
 }
 /* || GENERAL STYLES */
 body {
+  background-color: var(--BG-COLOR);
+  color: white;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  color: white;
-  background-color: var(--BG-COLOR);
 }
 .contactHeader {
+  column-gap: 500px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  column-gap: 500px;
 }
 .mainContainer {
+  align-items: center;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
 }
 .contactArticle {
+  align-items: center;
   display: flex;
   flex-flow: column nowrap;
-  row-gap: 10px;
-  align-items: center;
   min-height: 100vh;
+  row-gap: 10px;
   width: 100%;
   background-image: linear-gradient(
     to bottom,
@@ -73,8 +73,8 @@ body {
 /* TOP HEADER NAVIGATION BAR STYLES */
 .contactHeader__title {
   font-size: 2rem;
-  padding: 0.5rem;
   margin-top: 1rem;
+  padding: 0.5rem;
 }
 .contactHeader__title--link {
   color: var(--TEXT-COLOR);
@@ -84,21 +84,21 @@ body {
   text-decoration: underline;
 }
 .contactHeader__nav {
-  display: flex;
-  flex-flow: row wrap;
   align-items: center;
   column-gap: 50px;
+  display: flex;
+  flex-flow: row wrap;
   row-gap: 10px;
 }
 .contactHeader__button {
-  width: 150px;
-  padding: 0.5rem;
-  border: var(--BUTTON-BORDER);
-  border-radius: 5px;
   background-color: var(--BUTTON-BG-COLOR);
-  font-weight: bold;
-  transition: all 0.3s;
+  border-radius: 5px;
+  border: var(--BUTTON-BORDER);
   cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem;
+  transition: all 0.3s;
+  width: 150px;
 }
 .contactHeader__button:hover {
   background-color: transparent;
@@ -106,19 +106,19 @@ body {
 }
 /* CONTACT ARTICLE STYLING */
 .contactArticle__title {
-  text-transform: uppercase;
   border-bottom: 5px solid var(--BUTTON-BG-COLOR);
-  width: 200px;
+  margin-top: 7rem;
   padding: 0.3rem;
   text-align: center;
-  margin-top: 7rem;
+  text-transform: uppercase;
+  width: 200px;
 }
 .contactArticle__para {
-  font-weight: bold;
-  font-size: 3rem;
   color: var(--TEXT-COLOR);
-  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
   max-width: 600px;
+  text-align: center;
 }
 .contactArticle__smallPara {
   font-size: 1rem;
@@ -127,25 +127,25 @@ body {
 }
 /* CARD SECTION STYLING */
 .cardContainer {
+  column-gap: 50px;
   display: flex;
   flex-flow: row wrap;
-  column-gap: 50px;
-  row-gap: 20px;
   justify-content: center;
   margin: 5rem 0rem;
+  row-gap: 20px;
 }
 .card {
   align-items: center;
+  aspect-ratio: 1/1.35;
   background-color: hsl(0, 0%, 15%);
   background-color: white;
   border-radius: 10px;
   color: black;
   display: flex;
   flex-flow: column nowrap;
-  aspect-ratio: 1/1.35;
   justify-content: space-evenly;
-  width: 300px;
   transition: box-shadow 0.2s;
+  width: 300px;
 }
 .card:hover {
   box-shadow: -15px 15px 0px 0px var(--BUTTON-BG-COLOR);
@@ -156,17 +156,17 @@ body {
   padding-left: 10px;
 }
 .card__button {
-  border: var(--BUTTON-BORDER);
-  border-radius: 5px;
-  padding: 0.5rem;
-  min-width: 280px;
   background-color: var(--BUTTON-BG-COLOR);
+  border-radius: 5px;
+  border: var(--BUTTON-BORDER);
   cursor: pointer;
+  min-width: 280px;
+  padding: 0.5rem;
   transition: all 0.3s;
 }
 .card__button:hover {
-  font-weight: bold;
   background-color: transparent;
+  font-weight: bold;
 }
 /* SUBSCRIBE NEWSLETTER ARTICLE STYLES */
 .subscribeArticle {
