@@ -46,6 +46,12 @@ body {
   color: white;
   background-color: var(--BG-COLOR);
 }
+.contactHeader {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  column-gap: 500px;
+}
 .mainContainer {
   display: flex;
   flex-flow: column nowrap;
@@ -54,7 +60,7 @@ body {
 .contactArticle {
   display: flex;
   flex-flow: column nowrap;
-  row-gap: 30px;
+  row-gap: 10px;
   align-items: center;
   min-height: 100vh;
   width: 100%;
@@ -63,6 +69,61 @@ body {
     black 70vh,
     var(--SECTION-BG-COLOR)
   );
+}
+/* TOP HEADER NAVIGATION BAR STYLES */
+.contactHeader__title {
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+.contactHeader__title--link {
+  color: var(--TEXT-COLOR);
+  text-decoration: none;
+}
+.contactHeader__title--link:hover {
+  text-decoration: underline;
+}
+.contactHeader__nav {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  column-gap: 50px;
+  row-gap: 10px;
+}
+.contactHeader__button {
+  width: 150px;
+  padding: 0.5rem;
+  border: var(--BUTTON-BORDER);
+  border-radius: 5px;
+  background-color: var(--BUTTON-BG-COLOR);
+  font-weight: bold;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.contactHeader__button:hover {
+  background-color: transparent;
+  color: white;
+}
+/* CONTACT ARTICLE STYLING */
+.contactArticle__title {
+  text-transform: uppercase;
+  border-bottom: 5px solid var(--BUTTON-BG-COLOR);
+  width: 200px;
+  padding: 0.3rem;
+  text-align: center;
+  margin-top: 7rem;
+}
+.contactArticle__para {
+  font-weight: bold;
+  font-size: 3rem;
+  color: var(--TEXT-COLOR);
+  text-align: center;
+  max-width: 600px;
+}
+.contactArticle__smallPara {
+  font-size: 1rem;
+  text-align: center;
+  width: 70vw;
 }
 /* CARD SECTION STYLING */
 .cardContainer {
@@ -106,28 +167,6 @@ body {
 .card__button:hover {
   font-weight: bold;
   background-color: transparent;
-}
-/* CONTACT ARTICLE STYLING */
-.contactArticle__title {
-  text-transform: uppercase;
-  border: var(--BUTTON-BORDER);
-  border-radius: 10px;
-  width: 200px;
-  padding: 0.3rem;
-  text-align: center;
-  margin:1rem;
-}
-.contactArticle__para {
-  font-weight: bold;
-  font-size: 3rem;
-  color: var(--TEXT-COLOR);
-  text-align: center;
-  max-width: 600px;
-}
-.contactArticle__smallPara {
-  font-size: 1rem;
-  text-align: center;
-  width: 70vw;
 }
 /* SUBSCRIBE NEWSLETTER ARTICLE STYLES */
 .subscribeArticle {
