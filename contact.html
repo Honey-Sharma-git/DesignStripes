@@ -17,9 +17,127 @@
     imagination to life. Explore our portfolio and services on our website
     today!"
     />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <link rel="icon" href="Images/favicon-image.png" type="image/png" />
     <title>DesignStripes: Contact</title>
   </head>
-  <body></body>
+  <body>
+    <header class="contactHeader">
+      <h3 class="contactHeader__title">
+        <a class="contactHeader__title--link" href="index.html"
+          >DesignStripes</a
+        >
+      </h3>
+      <nav class="contactHeader__nav">
+        <button
+          onclick="window.open('help.html', '_blank')"
+          class="contactHeader__button"
+        >
+          HELP
+        </button>
+        <button
+          onclick="window.open('faq.html', '_blank')"
+          class="contactHeader__button"
+        >
+          FAQ
+        </button>
+      </nav>
+    </header>
+    <main class="mainContainer">
+      <article class="contactArticle">
+        <h1 class="contactArticle__title">Contact</h1>
+        <p class="contactArticle__para">
+          Get in touch with us for more information
+        </p>
+        <small class="contactArticle__smallPara"
+          >If you need help or have a question, we're here for you.</small
+        >
+        <section class="cardContainer">
+          <section class="card">
+            <img
+              src="Images/call.png"
+              alt="Call image"
+              height="158"
+              width="280"
+              title="Call us"
+              class="card__img"
+            />
+            <h2 class="card__title">Call us</h2>
+            <p class="card__para">
+              Our team of experts are waiting to hear you.
+            </p>
+            <p class="card__para">180-9999-999</p>
+            <button
+              onclick="window.location.href='tel:1809999999'"
+              class="card__button"
+            >
+              Call now
+            </button>
+          </section>
+          <section class="card">
+            <img
+              src="Images/visit.png"
+              alt="Visit our office"
+              height="158"
+              width="280"
+              title="visit us"
+              class="card__img"
+            />
+            <h2 class="card__title">Visit us</h2>
+            <p class="card__para">
+              We welcome you to visit our customer experience center.
+            </p>
+            <p class="card__para">DesignStripes, A-17, Jaipur</p>
+            <button
+              class="card__button"
+              onclick="window.location.href='maps.google.com'"
+            >
+              Location
+            </button>
+          </section>
+          <section class="card">
+            <img
+              src="Images/email.png"
+              alt="email image"
+              height="158"
+              width="280"
+              title="email us"
+              class="card__img"
+            />
+            <h2 class="card__title">Email us</h2>
+            <p class="card__para">
+              You can lodge your concerns to us in written.
+            </p>
+            <p class="card__para">support@designstripes.com</p>
+            <button
+              class="card__button"
+              onclick="window.location.href='mailto:support@designstripes.com'"
+            >
+              Mail us
+            </button>
+          </section>
+        </section>
+      </article>
+      <article class="subscribeArticle">
+        <h2 class="subscribeArticle__title">Subscribe to our newsletter</h2>
+        <form
+          action="https://httpbin.org/get"
+          method="get"
+          class="subscribeArticle__form"
+        >
+          <label for="email" class="subscribeArticle__label"
+            >Enter your email for newsletter subscription</label
+          >
+          <input
+            type="email"
+            required
+            autocomplete="on"
+            class="subscribeArticle__input"
+            placeholder="Enter email address"
+          />
+          <button class="subscribeArticle__button" type="submit">Submit</button>
+        </form>
+      </article>
+    </main>
+  </body>
 </html>
