@@ -4,7 +4,7 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  /* outline: 1px solid lime; */
+  /* outline: 1px solid blue; */
   /* background-color: hsla(0, 100%, 50%, 0.1); */
 }
 * {
@@ -27,7 +27,7 @@ button {
   --BUTTON-BG-COLOR: #fca311;
   --BUTTON-SHADOW-COLOR: rgb(194, 194, 194);
   --BUTTON-TEXT-COLOR: #000000;
-  --LINK-COLOR: blue;
+  --LINK-COLOR: #99b2dd;
   --SECTION-BG-COLOR: #14213d;
   --TEXT-COLOR: #ffffff;
   --TITLE-COLOR: #fca311;
@@ -40,13 +40,13 @@ button {
 }
 
 /* || UTILITY CLASSES */
-.text-large{
+.text-large {
   font-size: 1.3rem;
 }
-.line-30{
+.line-30 {
   line-height: 30px;
 }
-.text-justify{
+.text-justify {
   text-align: justify;
 }
 .nowrap {
@@ -87,6 +87,9 @@ button {
 }
 
 /* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--BG-COLOR);
   color: var(--TEXT-COLOR);
@@ -210,3 +213,34 @@ body {
 }
 
 /* FOOTER SECTION STYLES */
+.footer {
+  background-color: black;
+  min-height: 32px;
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  justify-content: center;
+  align-content: center;
+  flex-flow: row wrap;
+}
+.footer__nav {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  column-gap: 30px;
+  flex-flow: row wrap;
+}
+.footer__img {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  height: 50px;
+  width: 50px;
+  opacity: 0.3;
+  transition-property: opacity, transform;
+  transition-duration: 0.5s, 2s;
+}
+.footer__img:hover {
+  opacity: 1;
+  transform: translateY(-10px);
+}
