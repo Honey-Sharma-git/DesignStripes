@@ -28,6 +28,7 @@ button {
   --BUTTON-SHADOW-COLOR: rgb(194, 194, 194);
   --BUTTON-TEXT-COLOR: #000000;
   --LINK-COLOR: #99b2dd;
+  --PLACEHOLDER-COLOR: hsl(0, 0%, 80%);
   --SECTION-BG-COLOR: #14213d;
   --TEXT-COLOR: #ffffff;
   --TITLE-COLOR: #fca311;
@@ -37,4 +38,79 @@ button {
   --BUTTON-PADDING: 0.5rem;
   --BUTTON-SHADOW: 0 0 10px 1px var(--BUTTON-SHADOW-COLOR);
   --FF: "Roboto", sans-serif;
+}
+/* || GENERAL STYLES */
+.mainContainer {
+  background-color: gray;
+  display: flex;
+
+  flex-flow: column nowrap;
+}
+.contactArticle {
+  display: slategray;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+/* SUBSCRIBE NEWSLETTER ARTICLE STYLES */
+.subscribeArticle {
+  align-content: center;
+  align-items: center;
+  background-color: var(--SECTION-BG-COLOR);
+  column-gap: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: "Roboto", sans-serif;
+  justify-content: center;
+  min-height: 150px;
+  padding: 1rem;
+}
+.subscribeArticle__title {
+  color: var(--TEXT-COLOR);
+  font-size: 3rem;
+  padding: 1rem;
+}
+.subscribeArticle__form {
+  column-gap: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: stretch;
+  padding: 1rem;
+  position: relative;
+  row-gap: 5px;
+}
+.subscribeArticle__label {
+  left: -11111000px;
+  position: absolute;
+}
+.subscribeArticle__input {
+  background-color: transparent;
+  border-radius: 10px;
+  border: var(--BUTTON-BORDER);
+  color: var(--TEXT-COLOR);
+  font-size: 1rem;
+  min-height: 50px;
+  min-width: 280px;
+  outline: transparent;
+  padding-left: 1rem;
+}
+.subscribeArticle__input::placeholder {
+  color: var(--PLACEHOLDER-COLOR);
+}
+.subscribeArticle__button {
+  background-color: var(--BUTTON-BG-COLOR);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  min-height: 50px;
+  min-width: 100px;
+  outline: transparent;
+  transition-duration: 0.3s;
+  transition-property: all;
+}
+.subscribeArticle__button:hover {
+  background-color: transparent;
+  border-radius: 10px;
+  border: var(--BUTTON-BORDER);
+  color: var(--TEXT-COLOR);
 }

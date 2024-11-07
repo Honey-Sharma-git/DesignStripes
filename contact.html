@@ -21,5 +21,29 @@
     <link rel="icon" href="Images/favicon-image.png" type="image/png" />
     <title>DesignStripes: Contact</title>
   </head>
-  <body></body>
+  <body>
+    <main class="mainContainer">
+      <article class="contactArticle"></article>
+      <article class="subscribeArticle">
+        <h2 class="subscribeArticle__title">Subscribe to our newsletter</h2>
+        <form
+          action="https://httpbin.org/get"
+          method="get"
+          class="subscribeArticle__form"
+        >
+          <label for="email" class="subscribeArticle__label"
+            >Enter your email for newsletter subscription</label
+          >
+          <input
+            type="email"
+            required
+            autocomplete="on"
+            class="subscribeArticle__input"
+            placeholder="Enter email address"
+          />
+          <button class="subscribeArticle__button" type="submit">Submit</button>
+        </form>
+      </article>
+    </main>
+  </body>
 </html>
