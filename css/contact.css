@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* || CSS RESET */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  /* outline: 1px solid blue; */
+  /* background-color: hsla(0, 100%, 50%, 0.1); */
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+button {
+  font: inherit;
+}
+
+/* VARIABLES */
+:root {
+  /* COLORS */
+  --ANCHOR-TEXT-COLOR: #e5e5e5;
+  --ASIDE-BG-COLOR: #e5e5e5;
+  --BG-COLOR: #000000;
+  --BUTTON-BG-COLOR: #fca311;
+  --BUTTON-SHADOW-COLOR: rgb(194, 194, 194);
+  --BUTTON-TEXT-COLOR: #000000;
+  --LINK-COLOR: #99b2dd;
+  --SECTION-BG-COLOR: #14213d;
+  --TEXT-COLOR: #ffffff;
+  --TITLE-COLOR: #fca311;
+
+  /* STYLES */
+  --BUTTON-BORDER: 3px solid var(--BUTTON-BG-COLOR);
+  --BUTTON-PADDING: 0.5rem;
+  --BUTTON-SHADOW: 0 0 10px 1px var(--BUTTON-SHADOW-COLOR);
+  --FF: "Roboto", sans-serif;
+}
