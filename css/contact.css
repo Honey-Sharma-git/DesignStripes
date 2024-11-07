@@ -4,7 +4,7 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  outline: 1px solid blue;
+  /* outline: 1px solid blue; */
   /* background-color: hsla(0, 100%, 50%, 0.1); */
 }
 * {
@@ -64,6 +64,7 @@ body {
     var(--SECTION-BG-COLOR)
   );
 }
+/* CARD SECTION STYLING */
 .cardContainer {
   display: flex;
   flex-flow: row wrap;
@@ -73,9 +74,34 @@ body {
 }
 .card {
   background-color: hsl(0, 0%, 15%);
-  min-width: 300px;
+  background-color: white;
+  width: 300px;
   aspect-ratio: 1/1.15;
   border-radius: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  color: black;
+}
+.card__title,
+.card__para {
+  align-self: start;
+  padding-left: 10px;
+}
+.card__button {
+  border: var(--BUTTON-BORDER);
+  border-radius: 5px;
+  padding: 0.5rem;
+  min-width: 280px;
+  background-color: var(--BUTTON-BG-COLOR);
+  cursor: pointer;
+
+  transition: all 0.3s;
+}
+.card__button:hover {
+  font-weight: bold;
+  background-color: transparent;
 }
 /* CONTACT ARTICLE STYLING */
 .contactArticle__title {
