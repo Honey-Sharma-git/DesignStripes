@@ -17,7 +17,18 @@ img {
 button {
   font: inherit;
 }
-
+button:active {
+  animation: blurButton 0.5s;
+}
+@keyframes blurButton {
+  50% {
+    filter: blur(1px);
+    transform: scale(1.05);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
 /* VARIABLES */
 :root {
   /* COLORS */
@@ -104,6 +115,7 @@ body {
   background-color: transparent;
   color: white;
 }
+
 /* CONTACT ARTICLE STYLING */
 .contactArticle__title {
   border-bottom: 5px solid var(--BUTTON-BG-COLOR);
