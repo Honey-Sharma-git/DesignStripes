@@ -13,7 +13,23 @@
   </head>
   <body>
     <header>
-      <p>
+      <nav class="faqHeader__nav">
+        <h2 class="faqHeader__navTitle">DesignStripes</h2>
+        <button
+          class="faqHeader__button"
+          onclick="window.open('index.html', '_blank');"
+        >
+          Login</button
+        ><button
+          class="faqHeader__button"
+          onclick="window.open('index.html', '_blank');"
+        >
+          Sign up
+        </button>
+      </nav>
+      <h1 class="faqHeader__title">Frequently Asked Questions</h1>
+
+      <p class="faqHeader__para">
         Not everyone gets everything right from birth. Like most of us, we
         prefer to do things correctly on the first try. Achieving expected
         results often demands thorough research before execution. Asking the
@@ -23,6 +39,13 @@
         frequently asked questions about our logo design services to help you
         better understand what we offer.
       </p>
+      <input
+        type="search"
+        name="searchquery"
+        id="searchquery"
+        class="faqHeader__search"
+        placeholder="Search your topics here."
+      />
     </header>
     <main>
       <section id="faq">
