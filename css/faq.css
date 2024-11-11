@@ -21,6 +21,7 @@ button {
 :root {
   /*Colors*/
   --BG-COLOR: black;
+  --TEXT-COLOR: white;
 }
 
 /*GENERAL STYLES*/
@@ -31,6 +32,9 @@ button {
   left: -100000px;
 }
 .faqFooter {
+  padding: 10px 70px;
+  background-color: var(--BG-COLOR);
+  color: var(--TEXT-COLOR);
   position: relative;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -41,14 +45,15 @@ button {
     "p p q q q q"
     "p p d d d d"
     "p p d d d d"
-    ". e e e e e"
-    ". . . . s s";
+    "p p . e e e"
+    "p p . . s s";
 }
 .faqFooter__title {
   grid-area: t;
 }
 .faqFooter__para {
   grid-area: p;
+  /* text-align: justify; */
 }
 .faqFooter__query {
   grid-area: q;
@@ -61,4 +66,17 @@ button {
 }
 .faqFooter__submit {
   grid-area: s;
+}
+.faqFooter__title,
+.faqFooter__para,
+.faqFooter__query,
+.faqFooter__description,
+.faqFooter__email,
+.faqFooter__submit {
+  outline: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0.3rem;
+  background-color: transparent;
+  color: var(--TEXT-COLOR);
 }
