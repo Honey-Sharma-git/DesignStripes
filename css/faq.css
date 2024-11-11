@@ -29,7 +29,11 @@ button:active {
     filter: blur(0px);
   }
 }
-
+button:hover {
+  background-color: transparent;
+  color: var(--TEXT-COLOR);
+  transition: all 0.3s;
+}
 /*VARIABLES*/
 :root {
   /*Colors*/
@@ -50,6 +54,8 @@ button:active {
 body {
   font-family: "Roboto", sans-serif;
 }
+/* HEADER SECTION STYLES */
+
 /* FOOTER SECTION STYLES */
 .faqFooter__label {
   left: -100000px;
@@ -102,6 +108,7 @@ body {
   color: var(--TEXT-COLOR);
   outline: none;
   padding: 0.3rem;
+  font-family: inherit;
 }
 .faqFooter :is(input::placeholder, textarea::placeholder) {
   color: var(--PLACEHOLDER-COLOR);
@@ -114,9 +121,4 @@ body {
   border-color: var(--BUTTON-BG-COLOR);
   color: black;
   cursor: pointer;
-}
-.faqFooter__submit:hover {
-  background-color: transparent;
-  color: var(--TEXT-COLOR);
-  transition: all 0.3s;
 }
