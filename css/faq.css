@@ -3,7 +3,7 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  /* outline: 1px solid lime; */
+  outline: 1px solid lime;
   /* background-color: hsla(0, 100%, 50%, 0.01); */
 }
 * {
@@ -24,3 +24,41 @@ button {
 }
 
 /*GENERAL STYLES*/
+
+/* FOOTER SECTION STYLES */
+.faqFooter__label {
+  position: absolute;
+  left: -100000px;
+}
+.faqFooter {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+  grid-template-areas:
+    "t t t t . ."
+    "p p q q q q"
+    "p p d d d d"
+    "p p d d d d"
+    ". e e e e e"
+    ". . . . s s";
+}
+.faqFooter__title {
+  grid-area: t;
+}
+.faqFooter__para {
+  grid-area: p;
+}
+.faqFooter__query {
+  grid-area: q;
+}
+.faqFooter__description {
+  grid-area: d;
+}
+.faqFooter__email {
+  grid-area: e;
+}
+.faqFooter__submit {
+  grid-area: s;
+}
