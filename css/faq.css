@@ -55,7 +55,46 @@ body {
   font-family: "Roboto", sans-serif;
 }
 /* HEADER SECTION STYLES */
-
+.faqHeader {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(4, auto);
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  /* justify-items: center; */
+  align-content: center;
+  grid-template-areas:
+    "n n n n n n n"
+    ". . t t  t . ."
+    ". p p p p p ."
+    ". . s s s . .";
+}
+.faqHeader__nav {
+  grid-area: n;
+}
+.faqHeader__title {
+  grid-area: t;
+}
+.faqHeader__para {
+  grid-area: p;
+}
+.faqHeader__search {
+  grid-area: s;
+}
+.faqHeader__nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  column-gap: 500px;
+}
+.nav__buttons {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 50px;
+  row-gap: 10px;
+  align-items: center;
+}
 /* FOOTER SECTION STYLES */
 .faqFooter__label {
   left: -100000px;
