@@ -128,6 +128,43 @@
         </aside>
       </section>
     </main>
-    <footer></footer>
+    <footer class="faqFooter">
+      <h2 class="faqFooter__title">Still have unanswered questions?</h2>
+      <p class="faqFooter__para">
+        Feel free to write your queries and send them to us. Our customer
+        support team is dedicated to helping you and dispelling any doubts with
+        their expertise.
+      </p>
+      <label for="query" class="faqFooter__label">Type your question:</label>
+      <input
+        type="text"
+        name="query"
+        id="query"
+        required
+        class="faqFooter__query"
+        placeholder="Type your question"
+      />
+      <label for="description" class="faqFooter__label"
+        >Describe your query:</label
+      >
+      <textarea
+        class="faqFooter__description"
+        name="description"
+        id="description"
+        placeholder="Describe your query"
+        cols="10"
+        rows="2"
+      ></textarea>
+      <label for="email" class="faqFooter__label">Type your email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        required
+        class="faqFooter__email"
+        placeholder="Type your email"
+      />
+      <button type="submit" class="faqFooter__submit">Send</button>
+    </footer>
   </body>
 </html>
