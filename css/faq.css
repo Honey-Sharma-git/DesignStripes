@@ -4,7 +4,7 @@
 *::after,
 *::before {
   box-sizing: border-box;
-  outline: 1px solid lime;
+  /* outline: 1px solid lime; */
   /* background-color: hsla(0, 100%, 50%, 0.01); */
 }
 * {
@@ -16,6 +16,7 @@ img {
 }
 button {
   font: inherit;
+  cursor: pointer;
 }
 button:active {
   animation: blurButton 0.5s;
@@ -56,14 +57,14 @@ body {
 }
 /* HEADER SECTION STYLES */
 .faqHeader {
+  align-items: center;
+  background-color: var(--BG-COLOR);
+  color: var(--TEXT-COLOR);
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(4, auto);
+  place-content: center;
   row-gap: 20px;
-  justify-content: center;
-  align-items: center;
-  /* justify-items: center; */
-  align-content: center;
   grid-template-areas:
     "n n n n n n n"
     ". t t t t t ."
@@ -92,17 +93,42 @@ body {
 }
 /* TOP NAV BAR STYLES */
 .faqHeader__nav {
+  align-items: center;
+  background-color: var(--BG-COLOR);
+  column-gap: 500px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  column-gap: 500px;
 }
+.faqHeader__navTitle {
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+.faqHeader__navTitle a {
+  color: var(--TEXT-COLOR);
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.faqHeader__navTitle a:hover {
+  text-decoration: underline;
+}
+
 .nav__buttons {
   display: flex;
   flex-flow: row wrap;
   column-gap: 50px;
   row-gap: 10px;
   align-items: center;
+}
+.faqHeader__button {
+  font-weight: 700;
+  padding: 0.5rem;
+  width: 150px;
+  outline: transparent;
+  border-radius: 5px;
+  border: 4px solid var(--BUTTON-BG-COLOR);
+  background-color: var(--BUTTON-BG-COLOR);
 }
 /* FOOTER SECTION STYLES */
 .faqFooter__label {
