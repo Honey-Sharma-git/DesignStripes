@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 /* CSS RESET */
 *,
 *::after,
@@ -16,30 +17,53 @@ img {
 button {
   font: inherit;
 }
+button:active {
+  animation: blurButton 0.5s;
+}
+@keyframes blurButton {
+  50% {
+    filter: blur(1px);
+    transform: scale(1.05);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
 
 /*VARIABLES*/
 :root {
   /*Colors*/
-  --BG-COLOR: black;
-  --TEXT-COLOR: white;
+  --ANCHOR-TEXT-COLOR: #e5e5e5;
+  --ASIDE-BG-COLOR: #e5e5e5;
+  --BG-COLOR: #000000;
+  --BUTTON-BG-COLOR: #fca311;
+  --BUTTON-SHADOW-COLOR: rgb(194, 194, 194);
+  --BUTTON-TEXT-COLOR: #000000;
+  --LINK-COLOR: #99b2dd;
+  --PLACEHOLDER-COLOR: hsl(0, 0%, 80%);
+  --SECTION-BG-COLOR: #14213d;
+  --TEXT-COLOR: #ffffff;
+  --TITLE-COLOR: #fca311;
 }
 
 /*GENERAL STYLES*/
-
+body {
+  font-family: "Roboto", sans-serif;
+}
 /* FOOTER SECTION STYLES */
 .faqFooter__label {
-  position: absolute;
   left: -100000px;
+  position: absolute;
 }
 .faqFooter {
-  padding: 10px 70px;
-  background-color: var(--BG-COLOR);
+  background-color: var(--SECTION-BG-COLOR);
   color: var(--TEXT-COLOR);
-  position: relative;
   display: grid;
+  gap: 10px;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  gap: 10px;
+  padding: 10px 100px;
+  position: relative;
   grid-template-areas:
     "t t t t . ."
     "p p q q q q"
@@ -53,7 +77,6 @@ button {
 }
 .faqFooter__para {
   grid-area: p;
-  /* text-align: justify; */
 }
 .faqFooter__query {
   grid-area: q;
@@ -73,10 +96,27 @@ button {
 .faqFooter__description,
 .faqFooter__email,
 .faqFooter__submit {
-  outline: none;
-  border: 1px solid white;
+  background-color: transparent;
   border-radius: 5px;
+  border: 2px solid white;
+  color: var(--TEXT-COLOR);
+  outline: none;
   padding: 0.3rem;
+}
+.faqFooter :is(input::placeholder, textarea::placeholder) {
+  color: var(--PLACEHOLDER-COLOR);
+}
+.faqFooter :is(input:focus, textarea:focus) {
+  border: 3px solid var(--BUTTON-BG-COLOR);
+}
+.faqFooter__submit {
+  background-color: var(--BUTTON-BG-COLOR);
+  border-color: var(--BUTTON-BG-COLOR);
+  color: black;
+  cursor: pointer;
+}
+.faqFooter__submit:hover {
   background-color: transparent;
   color: var(--TEXT-COLOR);
+  transition: all 0.3s;
 }
