@@ -170,7 +170,12 @@ input::-webkit-search-cancel-button {
   padding-bottom: 2rem;
 }
 .faqAside {
-  background-color: rgb(47, 45, 45);
+  background-color: rgb(47, 45, 45, 0.5);
+  background-image: linear-gradient(
+    to top,
+    var(--SECTION-BG-COLOR),
+    rgb(47, 45, 45, 0.5)
+  );
   border-radius: 7px;
   grid-area: aside;
   padding-inline: 1rem;
@@ -207,6 +212,22 @@ input::-webkit-search-cancel-button {
 }
 .faqArticle__summary:hover {
   background-color: var(--SUMMARY-HOVER-BG-COLOR);
+}
+.faqArticle__summary {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.faqArticle__summary::before {
+  content: "+";
+  font-size: 2rem;
+  order: 2;
+  margin-right: 1rem;
+}
+.faqArticle__details[open] summary::before {
+  content: "-";
+  font-size: 3rem;
 }
 .faqArticle__para {
   padding: 1rem;
